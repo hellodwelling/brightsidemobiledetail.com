@@ -610,176 +610,251 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2  style= "color:#fbe402" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
             <h2  style= "color:#55595a" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/D3C40A41-F58C-4503-9E4A-9F00C30710FE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/TZNBYF2SYRQWXOPS7Y6OW27HKUJNI6EL3OFRTPA5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/774D534C-8846-4CCC-BA43-4DFF132D6934.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C4A12C8E-7E18-4AF5-9CAA-E69C78BC9933.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3D511B33-50F8-4EC1-B6BA-9C0E181C00D1.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CE7C8AF3-01B9-427F-89D0-2BC40143641F.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/7BEE9FAB-C12F-4146-959A-82DCD3F5A664.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/9C624C90-CA1C-4885-ABB3-BFDA6446D09E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3651D1DE-2615-4091-9575-B72FBBFE7023.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C50FFD4B-15AA-4BB0-8990-9D334844AD0D.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/00D00D04-08BB-4D0A-8639-CAB18B56F5AB.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1CC9123C-3177-46E5-9771-7447E28988ED.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/22862563-1BE5-475E-A13B-4A3D95FAEB33.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/B60C58B9-41F9-4E82-9604-5C9E7A21B8A0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/EC03C31C-EFEA-4033-805D-05CDB02705B3.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F69F025B-9821-427D-BEBE-B2B32C6D7F58.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/A301D3ED-9064-4EEC-B62D-C1AC27C4FBB4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/0ADA8168-C790-482D-9421-77DAC89D2B67.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/09A53FF7-21D2-4A28-9665-4BCDB067962E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/92EDB6FA-29D0-408B-A714-A0F1A0DEB976.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/IPK7TNZLSRQQAGWJ87MW8GCUMMLF1C1XMOW14KIV.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/A8DN0P6HG5GM8KZPN2Z1SY7VW9Y2VT7CMID84LM5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X0Z0QBUM302ZQSLL17NK0UHRK37KYAHCQ32DQUIK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/R5T5YSVMFG3GN5R2TFT5XJYB5ZPYRYLK12J5QGJL.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/DYV1DM0CBASU6OVO94U3Z9YI4KI73N8IZXWMUBYA.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BJ8Y3NPZOH1Q5YJYLG1Z612MUJ9M27MWM7X3H0NV.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/2XU8UOPLLDMJ4K6ABBJ30SOKYELQAD174E7R0FFD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/7CC6W6XLC7IOMI19DT1H3XRR1Y6ZNR4JHIDTUEJY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/AUFJRNVJ0V74EWGB27XZNO0FHV4FDPZWCJI8DUSZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O10NWSPO9BSJ757RPLV3M9FNBPLP8HPUWNOBF32L.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/A672SY4498H9A95502KMO2OK28X1JQ19HGBHAAJP.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/RW3E0W4YWGZO8YPDEQ3GR2SD3ZBB1UCGG0C24F8O.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/L1UGZ49TFDK4G0QBJW8O8TP9WTMSH73EVNDIPPDQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CC5GF7CX1PPOGS3IU5VCU8S3HYLM7WDXQHFZZ9QM.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/22862563-1BE5-475E-A13B-4A3D95FAEB33.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C0825C73-695B-4C62-A818-C05ECB916C25.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F8B40253-AB27-4B69-B71A-9A3E17B8636C.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/062454CB-B1EC-403A-BABF-92175B98DA97.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3CAFD48F-41B2-41B9-825B-2FA6E52013C1.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F01F6651-D341-4068-96AA-68A3CD85BBF5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CF06229C-1BB9-48B5-A698-5E045E1C7A2E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/747CE42B-DEB2-4E42-A26F-1FF5AA5B2AED.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/AF3035DE-2A85-46DB-B675-29D3C023851A.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/64170351-5528-46A5-B562-19E22BC76A23.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/0255BA7F-84F5-4D24-9AAA-3FE4FFE2B58D.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/B30A51FE-02C2-40D3-8BB3-B24CDF132883.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3131DF77-DAEA-45F0-98B5-36FF6AF33345.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/6C36BDC9-F21C-4BE7-ACB8-E9269B1458CA.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/TZNBYF2SYRQWXOPS7Y6OW27HKUJNI6EL3OFRTPA5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CE7C8AF3-01B9-427F-89D0-2BC40143641F.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/7BEE9FAB-C12F-4146-959A-82DCD3F5A664.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/9C624C90-CA1C-4885-ABB3-BFDA6446D09E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3651D1DE-2615-4091-9575-B72FBBFE7023.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C50FFD4B-15AA-4BB0-8990-9D334844AD0D.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/00D00D04-08BB-4D0A-8639-CAB18B56F5AB.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1CC9123C-3177-46E5-9771-7447E28988ED.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/B60C58B9-41F9-4E82-9604-5C9E7A21B8A0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/EC03C31C-EFEA-4033-805D-05CDB02705B3.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/F69F025B-9821-427D-BEBE-B2B32C6D7F58.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/A301D3ED-9064-4EEC-B62D-C1AC27C4FBB4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/0ADA8168-C790-482D-9421-77DAC89D2B67.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/09A53FF7-21D2-4A28-9665-4BCDB067962E.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/92EDB6FA-29D0-408B-A714-A0F1A0DEB976.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/D3C40A41-F58C-4503-9E4A-9F00C30710FE.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/774D534C-8846-4CCC-BA43-4DFF132D6934.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3D511B33-50F8-4EC1-B6BA-9C0E181C00D1.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C4A12C8E-7E18-4AF5-9CAA-E69C78BC9933.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/D080D57E-98E2-4D20-B04D-D5C3EBED7009.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/24ABF95D-EABA-4160-8D32-7246BD1479A7.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/IPK7TNZLSRQQAGWJ87MW8GCUMMLF1C1XMOW14KIV.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/A8DN0P6HG5GM8KZPN2Z1SY7VW9Y2VT7CMID84LM5.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X0Z0QBUM302ZQSLL17NK0UHRK37KYAHCQ32DQUIK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/R5T5YSVMFG3GN5R2TFT5XJYB5ZPYRYLK12J5QGJL.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/DYV1DM0CBASU6OVO94U3Z9YI4KI73N8IZXWMUBYA.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BJ8Y3NPZOH1Q5YJYLG1Z612MUJ9M27MWM7X3H0NV.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/2XU8UOPLLDMJ4K6ABBJ30SOKYELQAD174E7R0FFD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/7CC6W6XLC7IOMI19DT1H3XRR1Y6ZNR4JHIDTUEJY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/AUFJRNVJ0V74EWGB27XZNO0FHV4FDPZWCJI8DUSZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/O10NWSPO9BSJ757RPLV3M9FNBPLP8HPUWNOBF32L.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/A672SY4498H9A95502KMO2OK28X1JQ19HGBHAAJP.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/RW3E0W4YWGZO8YPDEQ3GR2SD3ZBB1UCGG0C24F8O.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/L1UGZ49TFDK4G0QBJW8O8TP9WTMSH73EVNDIPPDQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CC5GF7CX1PPOGS3IU5VCU8S3HYLM7WDXQHFZZ9QM.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/D3C40A41-F58C-4503-9E4A-9F00C30710FE.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/22862563-1BE5-475E-A13B-4A3D95FAEB33.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/TZNBYF2SYRQWXOPS7Y6OW27HKUJNI6EL3OFRTPA5.jpeg"  alt = "Photo number 1 of Bright Side Mobile Detail&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C0825C73-695B-4C62-A818-C05ECB916C25.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/774D534C-8846-4CCC-BA43-4DFF132D6934.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F8B40253-AB27-4B69-B71A-9A3E17B8636C.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C4A12C8E-7E18-4AF5-9CAA-E69C78BC9933.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/062454CB-B1EC-403A-BABF-92175B98DA97.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3D511B33-50F8-4EC1-B6BA-9C0E181C00D1.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3CAFD48F-41B2-41B9-825B-2FA6E52013C1.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CE7C8AF3-01B9-427F-89D0-2BC40143641F.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F01F6651-D341-4068-96AA-68A3CD85BBF5.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7BEE9FAB-C12F-4146-959A-82DCD3F5A664.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CF06229C-1BB9-48B5-A698-5E045E1C7A2E.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9C624C90-CA1C-4885-ABB3-BFDA6446D09E.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/747CE42B-DEB2-4E42-A26F-1FF5AA5B2AED.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3651D1DE-2615-4091-9575-B72FBBFE7023.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AF3035DE-2A85-46DB-B675-29D3C023851A.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C50FFD4B-15AA-4BB0-8990-9D334844AD0D.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/64170351-5528-46A5-B562-19E22BC76A23.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/00D00D04-08BB-4D0A-8639-CAB18B56F5AB.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0255BA7F-84F5-4D24-9AAA-3FE4FFE2B58D.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1CC9123C-3177-46E5-9771-7447E28988ED.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/B30A51FE-02C2-40D3-8BB3-B24CDF132883.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/22862563-1BE5-475E-A13B-4A3D95FAEB33.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3131DF77-DAEA-45F0-98B5-36FF6AF33345.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/B60C58B9-41F9-4E82-9604-5C9E7A21B8A0.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6C36BDC9-F21C-4BE7-ACB8-E9269B1458CA.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/EC03C31C-EFEA-4033-805D-05CDB02705B3.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/TZNBYF2SYRQWXOPS7Y6OW27HKUJNI6EL3OFRTPA5.jpeg"  alt = "Photo number 1 of Bright Side Mobile Detail&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F69F025B-9821-427D-BEBE-B2B32C6D7F58.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CE7C8AF3-01B9-427F-89D0-2BC40143641F.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/A301D3ED-9064-4EEC-B62D-C1AC27C4FBB4.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7BEE9FAB-C12F-4146-959A-82DCD3F5A664.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0ADA8168-C790-482D-9421-77DAC89D2B67.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9C624C90-CA1C-4885-ABB3-BFDA6446D09E.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/09A53FF7-21D2-4A28-9665-4BCDB067962E.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3651D1DE-2615-4091-9575-B72FBBFE7023.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/92EDB6FA-29D0-408B-A714-A0F1A0DEB976.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C50FFD4B-15AA-4BB0-8990-9D334844AD0D.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IPK7TNZLSRQQAGWJ87MW8GCUMMLF1C1XMOW14KIV.jpeg"  alt = "Photo number 2 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/00D00D04-08BB-4D0A-8639-CAB18B56F5AB.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 21; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/A8DN0P6HG5GM8KZPN2Z1SY7VW9Y2VT7CMID84LM5.jpeg"  alt = "Photo number 3 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 21; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1CC9123C-3177-46E5-9771-7447E28988ED.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 22; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X0Z0QBUM302ZQSLL17NK0UHRK37KYAHCQ32DQUIK.jpeg"  alt = "Photo number 4 of Bright Side Mobile Detail&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 22; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/B60C58B9-41F9-4E82-9604-5C9E7A21B8A0.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 23; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/R5T5YSVMFG3GN5R2TFT5XJYB5ZPYRYLK12J5QGJL.jpeg"  alt = "Photo number 5 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 23; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/EC03C31C-EFEA-4033-805D-05CDB02705B3.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 24; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DYV1DM0CBASU6OVO94U3Z9YI4KI73N8IZXWMUBYA.jpeg"  alt = "Photo number 6 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 24; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F69F025B-9821-427D-BEBE-B2B32C6D7F58.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 25; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BJ8Y3NPZOH1Q5YJYLG1Z612MUJ9M27MWM7X3H0NV.jpeg"  alt = "Photo number 7 of Bright Side Mobile Detail&#x27;s best work performing a Exterior Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 25; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/A301D3ED-9064-4EEC-B62D-C1AC27C4FBB4.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 26; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2XU8UOPLLDMJ4K6ABBJ30SOKYELQAD174E7R0FFD.jpeg"  alt = "Photo number 8 of Bright Side Mobile Detail&#x27;s best work performing a Exterior Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 26; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0ADA8168-C790-482D-9421-77DAC89D2B67.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 27; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7CC6W6XLC7IOMI19DT1H3XRR1Y6ZNR4JHIDTUEJY.jpeg"  alt = "Photo number 9 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 27; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/09A53FF7-21D2-4A28-9665-4BCDB067962E.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 28; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AUFJRNVJ0V74EWGB27XZNO0FHV4FDPZWCJI8DUSZ.jpeg"  alt = "Photo number 10 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 28; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/92EDB6FA-29D0-408B-A714-A0F1A0DEB976.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 29; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O10NWSPO9BSJ757RPLV3M9FNBPLP8HPUWNOBF32L.jpeg"  alt = "Photo number 11 of Bright Side Mobile Detail&#x27;s best work performing a Headlight Restoration job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 29; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/D3C40A41-F58C-4503-9E4A-9F00C30710FE.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 30; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/A672SY4498H9A95502KMO2OK28X1JQ19HGBHAAJP.jpeg"  alt = "Photo number 12 of Bright Side Mobile Detail&#x27;s best work performing a Exterior Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 30; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/774D534C-8846-4CCC-BA43-4DFF132D6934.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 31; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/RW3E0W4YWGZO8YPDEQ3GR2SD3ZBB1UCGG0C24F8O.jpeg"  alt = "Photo number 14 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 31; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3D511B33-50F8-4EC1-B6BA-9C0E181C00D1.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 32; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/L1UGZ49TFDK4G0QBJW8O8TP9WTMSH73EVNDIPPDQ.jpeg"  alt = "Photo number 15 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 32; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C4A12C8E-7E18-4AF5-9CAA-E69C78BC9933.jpeg"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 33; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CC5GF7CX1PPOGS3IU5VCU8S3HYLM7WDXQHFZZ9QM.jpeg"  alt = "Photo number 16 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 33; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/D080D57E-98E2-4D20-B04D-D5C3EBED7009.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 34; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/24ABF95D-EABA-4160-8D32-7246BD1479A7.jpeg"  alt="photo of best work"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 35; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IPK7TNZLSRQQAGWJ87MW8GCUMMLF1C1XMOW14KIV.jpeg"  alt = "Photo number 2 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 36; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/A8DN0P6HG5GM8KZPN2Z1SY7VW9Y2VT7CMID84LM5.jpeg"  alt = "Photo number 3 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 37; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X0Z0QBUM302ZQSLL17NK0UHRK37KYAHCQ32DQUIK.jpeg"  alt = "Photo number 4 of Bright Side Mobile Detail&#x27;s best work performing a Ceramic Coating job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 38; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/R5T5YSVMFG3GN5R2TFT5XJYB5ZPYRYLK12J5QGJL.jpeg"  alt = "Photo number 5 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 39; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DYV1DM0CBASU6OVO94U3Z9YI4KI73N8IZXWMUBYA.jpeg"  alt = "Photo number 6 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 40; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BJ8Y3NPZOH1Q5YJYLG1Z612MUJ9M27MWM7X3H0NV.jpeg"  alt = "Photo number 7 of Bright Side Mobile Detail&#x27;s best work performing a Exterior Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 41; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2XU8UOPLLDMJ4K6ABBJ30SOKYELQAD174E7R0FFD.jpeg"  alt = "Photo number 8 of Bright Side Mobile Detail&#x27;s best work performing a Exterior Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 42; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7CC6W6XLC7IOMI19DT1H3XRR1Y6ZNR4JHIDTUEJY.jpeg"  alt = "Photo number 9 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 43; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AUFJRNVJ0V74EWGB27XZNO0FHV4FDPZWCJI8DUSZ.jpeg"  alt = "Photo number 10 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 44; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O10NWSPO9BSJ757RPLV3M9FNBPLP8HPUWNOBF32L.jpeg"  alt = "Photo number 11 of Bright Side Mobile Detail&#x27;s best work performing a Headlight Restoration job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 45; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/A672SY4498H9A95502KMO2OK28X1JQ19HGBHAAJP.jpeg"  alt = "Photo number 12 of Bright Side Mobile Detail&#x27;s best work performing a Exterior Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 46; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/RW3E0W4YWGZO8YPDEQ3GR2SD3ZBB1UCGG0C24F8O.jpeg"  alt = "Photo number 14 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 47; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/L1UGZ49TFDK4G0QBJW8O8TP9WTMSH73EVNDIPPDQ.jpeg"  alt = "Photo number 15 of Bright Side Mobile Detail&#x27;s best work performing a Interior Detail job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 48; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CC5GF7CX1PPOGS3IU5VCU8S3HYLM7WDXQHFZZ9QM.jpeg"  alt = "Photo number 16 of Bright Side Mobile Detail&#x27;s best work performing a Complete Detail job"   loading="lazy" ></div>
                     
                  
                                     
