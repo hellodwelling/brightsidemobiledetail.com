@@ -1089,6 +1089,27 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8202affe-0b74-463a-8e57-6fbafd497ed5.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8202affe-0b74-463a-8e57-6fbafd497ed5.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
@@ -1108,7 +1129,28 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e523e8d1-6892-483b-abc3-131f5d2ced3f.png" alt="" /> -->
                              
@@ -1129,28 +1171,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a1a2a2eb-0bb0-4d00-8826-9b54343aa192.png" alt="" /> -->
                              
@@ -1171,34 +1192,13 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e69768e1-bf05-43a2-b3b0-3e249388d70a.jpeg" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e69768e1-bf05-43a2-b3b0-3e249388d70a.jpeg" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e69768e1-bf05-43a2-b3b0-3e249388d70a.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e69768e1-bf05-43a2-b3b0-3e249388d70a.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="" /> -->
                             
                         </div>
 
@@ -1257,11 +1257,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="" /> -->
                             
                         </div>
 
@@ -1278,11 +1278,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="" /> -->
                             
                         </div>
 
@@ -1899,7 +1899,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8202affe-0b74-463a-8e57-6fbafd497ed5.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1907,7 +1907,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e523e8d1-6892-483b-abc3-131f5d2ced3f.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8202affe-0b74-463a-8e57-6fbafd497ed5.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1915,7 +1915,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1923,7 +1923,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a1a2a2eb-0bb0-4d00-8826-9b54343aa192.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e523e8d1-6892-483b-abc3-131f5d2ced3f.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1931,7 +1931,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e69768e1-bf05-43a2-b3b0-3e249388d70a.jpeg" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a1a2a2eb-0bb0-4d00-8826-9b54343aa192.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1939,7 +1939,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e69768e1-bf05-43a2-b3b0-3e249388d70a.jpeg" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1963,7 +1963,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef7264f8-75bd-4671-8e91-a85e749a6507.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e2c10a0f-8c8a-4296-8ea8-5b622b8c972a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1971,7 +1971,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dc528b12-f761-4420-9e19-79b5261ad5d9.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/12dcd460-c6ef-45af-b939-a3a70bd1505a.png" alt="Exterior for Bright Side Mobile Detail in Thornton, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2755,68 +2755,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176930"
-                                                    name="176930"
+                                                    id="contact-service-211374"
+                                                    name="211374"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Wash & Wax"
                                             />
-                                            <label for="contact-label-service-176930" class="ml-3 text-sm font-medium text-gray-700">Wash & Wax</label>
+                                            <label for="contact-label-service-211374" class="ml-3 text-sm font-medium text-gray-700">Wash & Wax</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176931"
-                                                    name="176931"
+                                                    id="contact-service-211375"
+                                                    name="211375"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Detail"
                                             />
-                                            <label for="contact-label-service-176931" class="ml-3 text-sm font-medium text-gray-700">Exterior Detail</label>
+                                            <label for="contact-label-service-211375" class="ml-3 text-sm font-medium text-gray-700">Exterior Detail</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176932"
-                                                    name="176932"
+                                                    id="contact-service-211376"
+                                                    name="211376"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior Detail"
                                             />
-                                            <label for="contact-label-service-176932" class="ml-3 text-sm font-medium text-gray-700">Interior Detail</label>
+                                            <label for="contact-label-service-211376" class="ml-3 text-sm font-medium text-gray-700">Interior Detail</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176933"
-                                                    name="176933"
+                                                    id="contact-service-211377"
+                                                    name="211377"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Complete Detail"
                                             />
-                                            <label for="contact-label-service-176933" class="ml-3 text-sm font-medium text-gray-700">Complete Detail</label>
+                                            <label for="contact-label-service-211377" class="ml-3 text-sm font-medium text-gray-700">Complete Detail</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176934"
-                                                    name="176934"
+                                                    id="contact-service-211378"
+                                                    name="211378"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Headlight Restoration"
                                             />
-                                            <label for="contact-label-service-176934" class="ml-3 text-sm font-medium text-gray-700">Headlight Restoration</label>
+                                            <label for="contact-label-service-211378" class="ml-3 text-sm font-medium text-gray-700">Headlight Restoration</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176935"
-                                                    name="176935"
+                                                    id="contact-service-211379"
+                                                    name="211379"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-176935" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-211379" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                     </div>
@@ -2847,68 +2847,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176930"
-                                                    name="176930"
+                                                    id="contact-service-211374"
+                                                    name="211374"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Wash & Wax"
                                             />
-                                            <label for="contact-label-service-176930" class="ml-3 text-sm font-medium text-gray-700">Wash & Wax</label>
+                                            <label for="contact-label-service-211374" class="ml-3 text-sm font-medium text-gray-700">Wash & Wax</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176931"
-                                                    name="176931"
+                                                    id="contact-service-211375"
+                                                    name="211375"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Detail"
                                             />
-                                            <label for="contact-label-service-176931" class="ml-3 text-sm font-medium text-gray-700">Exterior Detail</label>
+                                            <label for="contact-label-service-211375" class="ml-3 text-sm font-medium text-gray-700">Exterior Detail</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176932"
-                                                    name="176932"
+                                                    id="contact-service-211376"
+                                                    name="211376"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior Detail"
                                             />
-                                            <label for="contact-label-service-176932" class="ml-3 text-sm font-medium text-gray-700">Interior Detail</label>
+                                            <label for="contact-label-service-211376" class="ml-3 text-sm font-medium text-gray-700">Interior Detail</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176933"
-                                                    name="176933"
+                                                    id="contact-service-211377"
+                                                    name="211377"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Complete Detail"
                                             />
-                                            <label for="contact-label-service-176933" class="ml-3 text-sm font-medium text-gray-700">Complete Detail</label>
+                                            <label for="contact-label-service-211377" class="ml-3 text-sm font-medium text-gray-700">Complete Detail</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176934"
-                                                    name="176934"
+                                                    id="contact-service-211378"
+                                                    name="211378"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Headlight Restoration"
                                             />
-                                            <label for="contact-label-service-176934" class="ml-3 text-sm font-medium text-gray-700">Headlight Restoration</label>
+                                            <label for="contact-label-service-211378" class="ml-3 text-sm font-medium text-gray-700">Headlight Restoration</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-176935"
-                                                    name="176935"
+                                                    id="contact-service-211379"
+                                                    name="211379"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-176935" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-211379" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                     </div>
